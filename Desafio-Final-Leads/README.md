@@ -39,3 +39,10 @@ Descrição de variáveis
 - A análise deve considerar os seguintes pontos: análise exploratória dos dados, tratamento dos dados, avaliação de algoritmos, treinamento do modelo, avaliação de performance do modelo e visualização dos resultados;
 - Para a apresentação do projeto, o tempo entre o treinamento do modelo e o output deve ser menor que 20 min.
 
+## Organização
+
+### O conteúdo está organizado em duas pastas:
+- Analise
+- Aplicação
+A primeira contém os arquivos de notebook utilizados para análise dos dados, validação de hipóteses, modelagem, e demais processos relacionados a análise e exploração dos dados e prototipação da solução. Já a segunda pasta contém os arquivos do projeto.
+
