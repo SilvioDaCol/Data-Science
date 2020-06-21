@@ -1,53 +1,34 @@
-# Pré-processamento de dados em Python
+# Descubra as melhores notas de matemática do ENEM 2016
 
-Neste desafio vamos praticar a manipulação de dados utilizando
-a biblioteca [pandas](https://pandas.pydata.org/). Manipulação de dados é uma das tarefas
-mais fundamentais para um cientista de dados e o pandas - biblioteca mais popular do Python no assunto - ajuda a tornar essa tarefa mais agradável.
-
-## Objetivo
-
-O objetivo deste desafio é extrair algumas informações quantitativas
-que nos ajudem a compreender a natureza dos dados à disposição e ganhar alguns _insights_
-sobre o _data set_.
-
-Para isso, utilizaremos o _data set_ [Black Friday](https://codenation-challenges.s3-us-west-1.amazonaws.com/data-science-0/black_friday.csv)
-disponibilizado originalmente pela [Analytics Vidhya](https://www.analyticsvidhya.com/) e acessível
-publicamente através do [Kaggle](https://www.kaggle.com). O _data set_ traz algumas variáveis relativas à transações comerciais
-realizadas durante a Black Friday em uma determinada loja de varejo. Cada observação é relativa
-a um determinado item comprado por um usuário e um usuário pode ter comprado mais de um item.
+Você deverá criar um modelo para prever a nota da prova de matemática de quem participou do ENEM 2016. 
 
 ## Tópicos
 
-Neste desafios nós vamos explorar:
+Neste desafio você aprenderá:
 
-* Python
-* Pandas
-* Jupyter notebook
+- Lógica
+- Análise de dados
+- Estatística
+- Regression
 
-## Requisitos
+## Detalhes
 
-Você precisará de Python 3 e pip. É altamente recomendado utilizar ambientes virtuais
-com o virtualenv e o arquivo `requirements.txt` para instalar os pacotes dependências
-do desafio:
+O contexto do desafio gira em torno dos resultados do ENEM 2016 (disponíveis no arquivo train.csv). Este arquivo, e apenas ele, deve ser utilizado para todos os desafios. Qualquer dúvida a respeito das colunas, consulte o [Dicionário dos Microdados do Enem 2016](https://s3-us-west-1.amazonaws.com/acceleration-assets-highway/data-science/dicionario-de-dados.zip).
 
-```bash
-$ pip3 install virtualenv
-$ virtualenv venv -p python3
-$ source venv/bin/activate
-$ pip install -r requirements.txt
-```
+Muitas universidades brasileiras utilizam o ENEM para selecionar seus futuros alunos e alunas. Isto é feito com uma média ponderada das notas das provas de matemática, ciências da natureza, linguagens e códigos, ciências humanas e redação. Determine os 20 melhores colocados, por ordem, para os pesos abaixo:
 
-Windows
+- matemática: 3
+- ciências da natureza: 2
+- linguagens e códigos: 1.5
+- ciências humanas: 1
+- redação: 3
 
-```bash
-> pip3 install virtualenv
-> virtualenv ..\venv -p python3
-> ..\venv\Scripts\activate
-> pip install -r requirements.txt
-```
+No arquivo test.csv crie um modelo para prever nota da prova de matemática (coluna **NU_NOTA_MT**) de quem participou do ENEM 2016. 
 
-Quando finalizado, você pode desativar o ambiente virtual do virtualenv com:
+Salve sua resposta em um arquivo chamado answer.csv com duas colunas: **NU_INSCRICAO** e **NU_NOTA_MT**.
 
-```bash
-$ deactivate
-```
+Faça o upload do arquivo answer.csv usando o botão "Submeter resposta".
+
+## Observações
+
+O objetivo do desafio é avaliar a sua capacidade de resolver problemas, então ele pode ser resolvido em qualquer linguagem de programação ou ferramenta que você tenha facilidade. Mas recomendamos o uso de linguagens com maior ferramental de matemática e estatística como Python, R, Scala ou Julia.
